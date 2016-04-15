@@ -37,6 +37,14 @@ public class VolleyUtil {
         mQueue = Volley.newRequestQueue(context);
     }
 
+    /**
+     * RequestQueue内部的设计就是非常合适高并发的，
+     * 因此我们不必为每一次HTTP请求都创建一个RequestQueue对象，
+     * 这是非常浪费资源的，
+     * 基本上在每一个需要和网络交互的Activity中创建一个RequestQueue对象就足够了。
+     * @param context 上下文对象
+     * @return
+     */
     public static VolleyUtil getInstance(Context context) {
         if (volleyUtil == null) {
             volleyUtil = new VolleyUtil(context);
