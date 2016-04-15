@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="stringget" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="stringpost" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="josnget" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="jsonpost" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="imagequest" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="imageQview" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="imageloader" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="xmlget" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="gsonget" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/linearLayout"
+        android:gravity="center"
+        android:text="result:"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/networkImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/linearLayout" />
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/networkImageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/linearLayout" />
+</RelativeLayout>
